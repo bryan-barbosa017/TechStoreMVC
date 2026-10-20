@@ -1,0 +1,19 @@
+1. Qual é a responsabilidade da classe Categoria?
+Representar uma categoria, armazenando informações como ID, nome, descrição e se está ativa.
+
+2. Qual é a responsabilidade do CategoriasController?
+Criar uma lista de categorias e enviá-la para a View, que vai exibir os dados na tela.
+
+3. Por que a View utiliza uma lista em @model?
+Porque ela recebe várias categorias do Controller e precisa acessar seus dados para exibir.
+
+4. Para que serve o foreach?
+Percorrer cada categoria da lista e exibir suas informações em uma linha da tabela.
+
+5. O que aconteceria se a pasta fosse criada como Views/Categoria, no singular?
+O MVC não encontraria automaticamente a View, pois o Controller se chama CategoriasController e 
+procura a View na pasta Views/Categorias. Seria necessário indicar o caminho manualmente ou renomear a pasta.
+
+6. Qual caminho a aplicação percorre quando acessamos /categorias?
+A aplicação direciona a requisição para o CategoriasController, executa o método Index(), cria a lista de categorias,
+envia a lista para a View Views/Categorias/Index.cshtml e exibe os dados na página.
