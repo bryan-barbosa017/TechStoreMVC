@@ -9,7 +9,11 @@ public class Categoria
     public string Descricao {get; set;}
     public bool Ativa {get; set;}
 
-
+    public Categoria()
+    {
+        Nome = "";
+        Descricao = "";
+    }
     
     public Categoria(
     int id,
